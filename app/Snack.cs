@@ -1,0 +1,4 @@
+class Snack : Recipe
+{
+    //Methods
+}

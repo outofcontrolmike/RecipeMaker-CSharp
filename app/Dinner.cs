@@ -1,0 +1,5 @@
+class Dinner : Recipe
+{
+
+    //Methods
+}

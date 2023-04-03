@@ -1,0 +1,5 @@
+class Breakfast : Recipe
+{
+
+    //Methods
+}
