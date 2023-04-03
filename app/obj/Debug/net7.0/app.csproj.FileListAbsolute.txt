@@ -1,0 +1,15 @@
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\bin\Debug\net7.0\app.exe
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\bin\Debug\net7.0\app.deps.json
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\bin\Debug\net7.0\app.runtimeconfig.json
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\bin\Debug\net7.0\app.dll
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\bin\Debug\net7.0\app.pdb
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\app.csproj.AssemblyReference.cache
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\app.AssemblyInfoInputs.cache
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\app.AssemblyInfo.cs
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\app.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\app.dll
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\refint\app.dll
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\app.pdb
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\app.genruntimeconfig.cache
+C:\xampp\htdocs\C#_Practice\RecipeMaker-CSharp\app\obj\Debug\net7.0\ref\app.dll
