@@ -5,15 +5,10 @@ namespace MyApp
 {
 
 
-class Recipe
+class Recipe : IRecipe
 {
     //Fields
  
-
-    // public Recipe(string name = null)
-    // {
-    //     this.Name = name;
-    // }
     public string name;
     public int servings;
     public string category;
@@ -24,33 +19,21 @@ class Recipe
     public string ingredients;
     public string author;
 
-    /*
-    
-    name,
-    servings,
-    category,
-    subcategory,
-    prep time,
-    cook time,
-    ingredients,
-    description,
-    */
+    // //Constructor
+    // public Recipe(string name = null, int servings = 0, string category = null, string subcategory = null,
+    // int prepTime = 0, int cookTime = 0, string description = null, string ingredients = null, string author = null)
+    // {
 
-    //Constructor
-    public Recipe(string name = null, int servings = 0, string category = null, string subcategory = null,
-    int prepTime = 0, int cookTime = 0, string description = null, string ingredients = null, string author = null)
-    {
-
-        this.Name = name;
-        this.Servings = servings;
-        this.Category = category;
-        this.Subcategory = subcategory;
-        this.PrepTime = prepTime;
-        this.CookTime = cookTime;
-        this.Description = description;
-        this.Ingredients = ingredients;
-        this.Author = author;
-    }
+    //     this.Name = name;
+    //     this.Servings = servings;
+    //     this.Category = category;
+    //     this.Subcategory = subcategory;
+    //     this.PrepTime = prepTime;
+    //     this.CookTime = cookTime;
+    //     this.Description = description;
+    //     this.Ingredients = ingredients;
+    //     this.Author = author;
+    // }
 
     public Recipe()
     {
