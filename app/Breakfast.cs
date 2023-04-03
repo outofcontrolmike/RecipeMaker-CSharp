@@ -4,6 +4,9 @@ namespace MyApp {
 class Breakfast : Recipe
 {
 
-    //Methods
+    public string Topic()
+    {
+        return "Breakfast is one of the most important meals of the day";
+    }
 }
 }

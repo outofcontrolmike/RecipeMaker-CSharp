@@ -18,12 +18,10 @@ namespace MyApp
 
           int CookTime {get;}
 
-          string Description {get;}
+          string Directions {get;}
 
           string Ingredients {get;}
 
           string Author {get;}
-
-
     }
 }

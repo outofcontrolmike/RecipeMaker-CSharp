@@ -15,7 +15,7 @@ class Recipe : IRecipe
     public string subcategory;
     public int prepTime;
     public int cookTime;
-    public string description;
+    public string directions;
     public string ingredients;
     public string author;
 
@@ -67,7 +67,7 @@ class Recipe : IRecipe
         get; set;
     }
 
-    public string Description{
+    public string Directions{
         get; set;
     }
     public string Ingredients {
