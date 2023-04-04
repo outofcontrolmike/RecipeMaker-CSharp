@@ -43,6 +43,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
             {
                 AssignProps(sr.Name,sr.Servings,sr.Category,sr.Subcategory,sr.PrepTime,sr.CookTime,sr.Directions,sr.Ingredients,sr.Author);
             }
+
+            Console.WriteLine("\nRecipe Type: " +  rType);
         }
 
 
@@ -60,7 +62,9 @@ static private void AssignProps(string name, int servings, string category, stri
     ingredients = Ingredients();
     author = AuthorName();
 
-    Console.WriteLine("testiiiing"  + name);
+    Console.Clear();
+    Console.WriteLine("Thank you for creating a recipe!  Your Recipe will be printed down below.\n\n");
+    Console.WriteLine($"Recipe Name: {name}\nAuthor: {author}\nServings: {servings}\nCategory: {category}\nSub Category: {subCategory}\nPrep Time: {prepTime}\nCook Time: {cookTime}\n\nIngredients: {ingredients}\n\nDirections: {directions}");
 
 }
         static private void Introduction()
@@ -112,8 +116,9 @@ static private void AssignProps(string name, int servings, string category, stri
             do{
             Console.WriteLine("What would you like to name the recipe? :  ");
             name = Console.ReadLine();
+                        Console.Clear();
+
             } while (name == "");
-            Console.Clear();
             Console.WriteLine($"You decided to name your recipe: {name}!\n\nPlease Enter any key to continue.");
             Console.Clear();
             return name;
@@ -121,61 +126,89 @@ static private void AssignProps(string name, int servings, string category, stri
         
         static private int Servings()
         {
+            int servings;
+            // bool Valid = false;
+            // int Number;
+            
             Console.WriteLine("Please enter the amount of servings that your recipe will make: ");
-            int servings = Convert.ToInt32(Console.ReadLine());
+            servings = Convert.ToInt32(Console.ReadLine());
+            // if(int.TryParse(servings, out Number))
+            // {
+            //     Convert.ToInt32(servings);
+            //     Valid = true;
+            // }
+            // }while(Valid == false);
+       
             Console.Clear();
             return servings;
         }
 
         static private int PrepTime()
         {
-                 Console.WriteLine("Please enter how many minutes this recipe takes to Prep: ");
-            int prepTime = Convert.ToInt32(Console.ReadLine());
+            int prepTime;
+            do {
+            Console.WriteLine("Please enter how many minutes this recipe takes to Prep: ");
+            prepTime = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
             Console.Beep(500,100);
+            }while(prepTime == 0);
+             
             return prepTime;
         }
 
           static private int CookTime()
         {
+            int cookTime;
+            do{
                  Console.WriteLine("Please enter how many minutes this recipe takes to Cook: ");
-            int cookTime = Convert.ToInt32(Console.ReadLine());
+            cookTime = Convert.ToInt32(Console.ReadLine());
                   Console.Clear();
-            Console.Beep(1000,100);
+                  Console.Beep(1000,100);}
+                  while(cookTime == 0);
+            
             return cookTime;
         }
         
          static private string Ingredients()
         {
+            string ingredients = "";
+            do{
+
             Console.WriteLine("Please list out the Ingredients.. for now our program will separate the directions based on where you place commas in your text. \n");
             Console.WriteLine("Enter the ingredients here... example: bananas,flour,sugar,honey,ect..");
             
-            string ingredients = Console.ReadLine();
+            ingredients = Console.ReadLine();
             Console.Clear();
+            }
+            while (ingredients == "");
             return ingredients;
-
         }
 
         static private string Directions()
         {
-            Console.WriteLine("Please list out the directions.. for now our program will separate the directions based on where you place periods in your text. ");
+            string directions = "";
+            do {Console.WriteLine("Please list out the directions.. for now our program will separate the directions based on where you place periods in your text. ");
                   
                   Console.WriteLine("\nExample:  First, get all of your ingredients out. Preheat the oven to 450.  While the oven is preheating, prep your veggies and meat.  Combine all ingredients together on a baking sheet and place in oven when ready. Bake for 30 minutes or until golden brown. Enjoy the recipe!");
 
             Console.WriteLine("\nThe above example should print out a list like this:\n\nFirst, get all of your ingredients out\nPreheat the oven to 450.\nWhile the oven is preheating, prep your veggies and meat.\nCombine all ingredients together on a baking sheet and place in oven when ready.\nBake for 30 minutes or until golden brown.\nEnjoy the recipe!\n");
             
             Console.WriteLine("Enter the directions here: ");
-            string directions = Console.ReadLine();
-            Console.Clear();
+            directions = Console.ReadLine();
+            Console.Clear(); }
+            while(directions == "");
             return directions;
 
         }
 
         static private string AuthorName()
         {
+            string author;
+            do{
             Console.WriteLine("Please enter your name or the authors name: ");
-
-            string author = Console.ReadLine();
+            author = Console.ReadLine();
+            Console.Clear();
+            }while (author == "");
             return author;
         }
 
@@ -189,10 +222,13 @@ static private void AssignProps(string name, int servings, string category, stri
             else {
                 cat = "Sub Category";
             }
+            string categoryName = "";
+            do{
             Console.WriteLine($"What would you say the {cat} is for your recipe?: ");
-            string category = Console.ReadLine();
+            categoryName = Console.ReadLine();
             Console.Clear();
-            return category;
+            }while (categoryName == "");
+            return categoryName;
         }
  
      
